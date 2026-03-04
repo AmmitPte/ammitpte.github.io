@@ -1,0 +1,27 @@
+<header class="site-header">
+    <div class="container header-container">
+        <a href="/" class="logo-link">
+            <img src="/images/logo.png" alt="Ammit Logo" class="logo">
+        </a>
+
+        <nav class="main-nav">
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-list">
+                {{ $currentPage := . }}
+                {{ range site.Menus.main }}
+                <li class="nav-item">
+                    <a href="{{ .URL }}" class="nav-link {{ if $currentPage.IsMenuCurrent " main" . }}active{{ end
+                        }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+                <li class="nav-item cta-item">
+                    <a href="/#book-demo" class="btn btn-primary btn-sm">Book a Demo</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

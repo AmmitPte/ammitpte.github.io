@@ -1,0 +1,75 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="text-gradient-gold">Secure Identity & MPC Wallets</h1>
+            <p>Ammit focuses on identity management and security solutions using MPC and threshold cryptography. Our
+                techniques survive compromised devices and services.</p>
+            <div style="margin-top: var(--spacing-md);">
+                <a href="#book-demo" class="btn btn-primary">Book a Demo</a>
+                <a href="/ammit-wallet/" class="btn btn-outline" style="margin-left: 1rem;">Learn More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Snippet Section -->
+<section class="section">
+    <div class="container">
+        <div
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-md);">
+            <div class="card">
+                <h3 class="text-gradient-gold">MPC Architecture</h3>
+                <p>Multi-Party Computation means no single point of failure. Your identity stays secure even if your
+                    device is lost or compromised.</p>
+            </div>
+            <div class="card">
+                <h3 class="text-gradient-gold">Verifiable Credentials</h3>
+                <p>A wallet built natively for digital identities like mobile driver's licenses and passports. True
+                    cryptographic verification.</p>
+            </div>
+            <div class="card">
+                <h3 class="text-gradient-gold">Enterprise Ready</h3>
+                <p>Offering enhanced security and hosting services tailored for banks, governments, and financial
+                    institutions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Demo Form Section -->
+<section id="book-demo" class="section" style="background: rgba(0,0,0,0.2);">
+    <div class="container">
+        <div class="text-center" style="margin-bottom: var(--spacing-md);">
+            <h2 class="text-gradient-gold">Experience the Future of Identity</h2>
+            <p class="text-muted">Fill out the form below and we'll be in touch to schedule a live demo of the Ammit
+                Wallet.</p>
+        </div>
+
+        <div class="card form-card">
+            <form action="mailto:contact@ammit.example.com" method="POST" enctype="text/plain">
+                <div class="form-group">
+                    <label class="form-label">Name</label>
+                    <input type="text" class="form-control" name="name" required placeholder="Jane Doe">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Work Email</label>
+                    <input type="email" class="form-control" name="email" required placeholder="jane@company.com">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Company</label>
+                    <input type="text" class="form-control" name="company" placeholder="Acme Corp">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">How can we help?</label>
+                    <textarea class="form-control" name="message"
+                        placeholder="Tell us about your identity/security challenges..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary"
+                    style="width: 100%; margin-top: var(--spacing-sm);">Request Demo</button>
+            </form>
+        </div>
+    </div>
+</section>
+{{ end }}

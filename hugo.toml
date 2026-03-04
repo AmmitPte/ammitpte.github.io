@@ -1,0 +1,28 @@
+baseURL = 'https://ammit.github.io/'
+languageCode = 'en-us'
+title = 'Ammit | Secure Identity & MPC Wallets'
+
+[params]
+  description = "Ammit focuses on identity management and security solutions using MPC and threshold cryptography for robust, loss-survivable verifiable credentials."
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Ammit Wallet"
+    url = "/ammit-wallet/"
+    weight = 2
+  [[menu.main]]
+    name = "Enterprise"
+    url = "/enterprise-services/"
+    weight = 3
+  [[menu.main]]
+    name = "About Us"
+    url = "/about-us/"
+    weight = 4
+  [[menu.main]]
+    name = "Join Us"
+    url = "/join-us/"
+    weight = 5

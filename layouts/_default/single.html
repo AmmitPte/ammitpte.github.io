@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="page-header" style="padding-top: var(--spacing-xl); padding-bottom: var(--spacing-md); text-align: center;">
+    <div class="container">
+        <h1 class="text-gradient-gold">{{ .Title }}</h1>
+        {{ with .Params.subtitle }}
+        <p class="text-muted" style="font-size: 1.2rem;">{{ . }}</p>
+        {{ end }}
+    </div>
+</div>
+
+<div class="page-content section">
+    <div class="container">
+        <div class="content-wrapper"
+            style="background: var(--color-glass); padding: var(--spacing-lg); border-radius: 16px; border: 1px solid var(--color-glass-border);">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}
