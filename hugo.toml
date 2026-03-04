@@ -26,3 +26,7 @@ title = 'Ammit | Secure Identity & MPC Wallets'
     name = "Join Us"
     url = "/join-us/"
     weight = 5
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
