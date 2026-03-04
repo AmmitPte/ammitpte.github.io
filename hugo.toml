@@ -1,14 +1,14 @@
-baseURL = 'https://ammit.github.io/'
+baseURL = 'https://ammit.org/'
 languageCode = 'en-us'
-title = 'Ammit | Secure Identity & MPC Wallets'
+title = 'Ammit | Secure Identity & MPC Solutions'
 
 [params]
-  description = "Ammit focuses on identity management and security solutions using MPC and threshold cryptography for robust, loss-survivable verifiable credentials."
+  description = "Hackproof identity solutions using MPC."
 
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
+    name = "Digital Identity"
+    url = "/digital-identity/"
     weight = 1
   [[menu.main]]
     name = "Ammit Wallet"
