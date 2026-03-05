@@ -5,7 +5,7 @@ subtitle: "The future is already here, it's just not very evenly distributed. �
 
 ## What is digital identity?
 
-Digital identities — ID cards, driver's licenses, passports, etc. — are already making the jump to digital with Mobile Driver's Licenses being piloted in several US states, Brazil, and parts of Canada, not to mention the EU's Digital Identity initiative. Singapore has had a national digital identity, Singpass, for years. The question is not *if* digital identities will become mainstream, but how *how quickly*.
+Individual identities — ID cards, driver's licenses, passports, etc. — are already making the jump to digital with Mobile Driver's Licenses being piloted in several US states, Brazil, and parts of Canada, not to mention the EU's Digital Identity initiative. Singapore has had a national digital identity, Singpass, for years. The question is not *if* digital identities will become mainstream, but how *how quickly*.
 
 ## What is a Verifiable Credential (VC)?
 
