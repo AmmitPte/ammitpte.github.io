@@ -37,4 +37,4 @@ Security is handled through the device's hardware-backed security modules, such 
 
 While identity wallets provide many advantages in terms of privacy and security, they suffer from one fundamental flaw: losing the device means losing access to all of your credentials. Whether from theft, damage, forgotten passcodes, or simply not being in the same room, this means loss of access. Even worse, if the device is compromised, whether by malware or physical attacks, attackers could impersonate you with much worse results than with current systems.
 
-**Ammit Wallet** uses our [hackproof architecture](/hackproof-solutions/) to produce an identity wallet that spans devices yet provides security in the event that any device is lost or compromised. You can use any of your devices to present your identity, and replacing a device is quick and easy.
+**Ammit Wallet** uses our [failsafe design](/failsafe-design/) to produce an identity wallet that spans devices yet provides security in the event that any device is lost or compromised. You can use any of your devices to present your identity, and replacing a device is quick and easy.
