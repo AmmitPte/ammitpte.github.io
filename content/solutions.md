@@ -5,11 +5,11 @@ subtitle: "Solutions designed to survive any level of compromise."
 
 At Ammit, we provide a suite of products to secure digital identities, communications, and enterprise workflows. Employing a [failsafe design philosophy](/failsafe-design/), our core architecture assumes infrastructure will eventually be compromised and ensures that a single point of failure never results in data loss or identity theft.
 
-## [Ammit Wallet](/ammit-wallet/)
+## Ammit Wallet
 
 Security should adapt to you, not the other way around. Typical digital wallets store your private key locally, meaning if your device is lost or compromised, your digital identity is at risk. 
 
-The [Ammit Wallet](/ammit-wallet/) takes a radically different approach. It is a next-generation **MPC (Multi-Party Computation) Wallet for Digital Identities**. Instead of keeping a complete private key on one device, the key is split into multiple independent "shares" distributed across your devices, our servers, and secure backup locations. This means we leverage having multiple devices to *improve* your security rather than degrade it. If one device falls into the wrong hands, zero actionable information is leaked to attackers. 
+The Ammit Wallet takes a radically different approach. It is a next-generation **MPC (Multi-Party Computation) Wallet for Digital Identities**. Instead of keeping a complete private key on one device, the key is split into multiple independent "shares" distributed across your devices, our servers, and secure backup locations. This means we leverage having multiple devices to *improve* your security rather than degrade it. If one device falls into the wrong hands, zero actionable information is leaked to attackers. 
 
 Our wallet natively supports [Verifiable Credentials (VCs)](https://www.w3.org/TR/vc-data-model/)—such as Mobile Driver's Licenses (mDL), Digital Passports, and Bank Identity Tokens—bringing the privacy and cross-border capabilities of decentralized identity into a highly robust and secure environment. 
 
@@ -18,7 +18,6 @@ This foundation enables applications far beyond standard identity:
 * **Decentralized Messaging:** Enjoy hackproof messaging where you can trust the identity of the person on the other side.
 * **Web-of-Trust and Social Media:** Connect confidently knowing impersonation attempts and phishing scams are mathematically impossible. 
 
-[Learn more about the Ammit Wallet &rarr;](/ammit-wallet/)
 
 ## Ammit Cloud
 
@@ -32,7 +31,7 @@ Losing access to your devices shouldn't mean losing your identity. **Ammit Backu
 
 Designed for users with few devices, it allows you to completely recover your digital life even if you lose your primary hardware. And because of our failsafe architecture, a compromised backup does not give an attacker enough shares to reconstruct your keys, ensuring your backups remain a safety net, not a vulnerability.
 
-## [Enterprise Services](/enterprise-services/)
+## Enterprise Services
 
 We offer a suite of Enterprise-Grade Services tailored for banks, governments, healthcare providers, and regulated organizations. Whether you need cloud or on-premises deployments, Ammit integrates into your existing identity stacks with solutions that scale to your organization's highest assurance needs.
 
