@@ -1,0 +1,39 @@
+{{ define "main" }}
+<div class="page-header join-us-header">
+    <div class="container">
+        <h1 class="text-gradient-gold">{{ .Title }}</h1>
+        {{ with .Params.subtitle }}
+        <p class="text-muted join-us-header__subtitle">{{ . }}</p>
+        {{ end }}
+    </div>
+</div>
+
+<div class="page-content section join-us-page">
+    <div class="container">
+        <section class="join-us-about content-wrapper" aria-labelledby="about-ammit">
+            {{ .Content }}
+        </section>
+
+        {{ $jobs := where site.RegularPages "Section" "join-us" }}
+        {{ $jobs = where $jobs "Params.role" "!=" nil }}
+        {{ $jobs = $jobs.ByWeight }}
+        {{ if $jobs }}
+        <section class="jobs-section" aria-labelledby="open-roles-heading">
+            <h2 id="open-roles-heading" class="jobs-section__heading text-gradient-gold">Open Roles</h2>
+            <div class="jobs-grid">
+                {{ range $jobs }}
+                {{ partial "job-card.html" . }}
+                {{ end }}
+            </div>
+        </section>
+        {{ end }}
+
+        <section class="join-us-cta card" aria-labelledby="get-in-touch-heading">
+            <h2 id="get-in-touch-heading" class="text-gradient-gold">Get In Touch</h2>
+            <p>Interested in joining the team? We'd love to hear from you.</p>
+            <p>Send us an email with your background and what excites you about the future of secure identity:</p>
+            <p><a class="btn btn-primary" href="mailto:contact@ammit.org">contact@ammit.org</a></p>
+        </section>
+    </div>
+</div>
+{{ end }}

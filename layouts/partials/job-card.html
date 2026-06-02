@@ -1,0 +1,16 @@
+<article class="card job-card">
+    <details class="job-card__details">
+        <summary class="job-card__summary">
+            <span class="job-card__summary-main">
+                <span class="job-card__title text-gradient-gold">{{ .Title }}</span>
+                {{ with .Params.role }}
+                <span class="job-card__role text-muted">{{ . }}</span>
+                {{ end }}
+            </span>
+            <span class="job-card__chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="job-card__body">
+            {{ .Content }}
+        </div>
+    </details>
+</article>
