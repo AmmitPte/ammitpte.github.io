@@ -17,7 +17,7 @@ But there's a catch. **How do you know whose key it is?**
 
 A signature is only as trustworthy as the key that generated it. A trustworthy system connects a signature not just to a key but to an identity, despite the keys changing when users lose their phones, get malware, and change organisations.
 
-Today's solutions largely rely on central authorities and platforms to tell us who is who. This doesn’t solve the problem, it just shifts it. Now rather than tricking many people, fraudsters only need to trick the platform. And that’s assuming the authority is globally trusted and isn’t compromised and. This isn’t theoretical, it’s the reality that has been played out many times on the world wide web with Certificate Authorities.
+Today's solutions largely rely on central authorities and platforms to tell us who is who. This doesn’t solve the problem, it just shifts it. Now rather than tricking many people, fraudsters only need to trick the platform. And that’s assuming the authority is globally trusted and isn’t compromised. This isn’t theoretical, it’s the reality that has been played out many times on the world wide web with Certificate Authorities.
 
 ## Ammit: A foundation for trust in the digital world.
 
