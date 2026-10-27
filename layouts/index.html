@@ -2,112 +2,28 @@
 <!-- Hero Section -->
 <section class="hero-section">
     <div class="container">
-        <div class="text-center" style="margin-bottom: var(--spacing-md);">
-            <div
-                style="position: relative; width: 100%; max-width: 960px; margin: 0 auto; border-radius: 0.75rem; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); padding-top: 56.25%;">
-                <iframe
-                    src="https://www.youtube.com/embed/dXhxw-zrhdw?si=Z4-4r8vCMmHUu1jx"
-                    title="YouTube video player"
-                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div>
-
         <div class="hero-content">
-            <h1 class="text-gradient-gold">Ammit Digital Identity</h1>
-            <p>The privacy, speed, and convenience of distributed identity, with all of the security of
-                centralized systems.</p>
+            <img src="images/logo.png" style="max-width: 50%; max-height: 50vh; width: auto; height: auto;"/><br/>
+            <h1 class="text-gradient-gold">{{ .Title }}</h1>
+            {{ with .Params.subtitle }}
+            <h2>{{ . }}</h2>
+            {{ end }}
             <div style="margin-top: var(--spacing-md);">
                 <a href="#book-demo" class="btn btn-primary">Book a Demo</a>
-                <a href="#identity" class="btn btn-outline" style="margin-left: 1rem;">Learn More</a>
+                <a href="#content" class="btn btn-outline" style="margin-left: 1rem;">Learn More</a>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Features Snippet Section -->
-<section class="section">
+<!-- Content from content/_index.md -->
+<div class="page-content section" id="content">
     <div class="container">
-        <div
-            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-md);">
-            <div class="card">
-                <h3 class="text-gradient-gold">MPC Architecture</h3>
-                <p>Multi-Party Computation means no single point of failure. Your identity stays secure even if your
-                    device is lost or compromised.</p>
-            </div>
-            <div class="card">
-                <h3 class="text-gradient-gold">Verifiable Credentials</h3>
-                <p>A wallet built natively for digital identities like mobile driver's licenses and passports. True
-                    cryptographic verification.</p>
-            </div>
-            <div class="card">
-                <h3 class="text-gradient-gold">Enterprise Ready</h3>
-                <p>Offering enhanced security and hosting services tailored for banks, governments, and financial
-                    institutions.</p>
-            </div>
+        <div class="content-wrapper">
+            {{ .Content }}
         </div>
     </div>
-</section>
-
-<!-- Digital Identity -->
-<section class="section" id="identity">
-    <div class="container">
-        <div class="text-center" style="margin-bottom: var(--spacing-md);">
-            <h2 class="text-gradient-gold">Digital Identity</h2>
-            <div class="card" style="margin: var(--spacing-md) auto; max-width: 600px;">
-                <blockquote style="margin: 0; font-style: italic;">
-                    <p style="font-size: 1.1rem;">"The future is already here, it's just not very evenly distributed."
-                    </p>
-                    <footer class="text-muted" style="font-style: normal; margin-top: var(--spacing-sm);">
-                        — William Gibson, <cite>Neuromancer</cite>
-                    </footer>
-                </blockquote>
-            </div>
-
-            <p>Personal identities — ID cards, driver's licenses, passports, etc. — are already making the jump to
-                digital with Mobile Driver's Licenses being piloted in several US states, Brazil, and parts of Canada,
-                not to mention the EU's Digital Identity initiative. Singapore has had a national digital identity,
-                Singpass, for years. The question is not <em>if</em> digital identities will become mainstream, but how
-                <em>how quickly</em>. Even more importantly: is your organization ready for the change?
-            </p>
-
-            <div style="margin-top: var(--spacing-md);">
-                <a href="#book-demo" class="btn btn-primary">Book a Demo</a>
-                <a href="/digital-identity/" class="btn btn-outline" style="margin-left: 1rem;">Learn More</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Failsafe Design -->
-<section class="section" id="failsafe-design">
-    <div class="container">
-        <div class="text-center" style="margin-bottom: var(--spacing-md);">
-            <h2 class="text-gradient-gold">Failsafe Design</h2>
-
-            <p>Centralized systems allow for recovery should endpoint devices be lost or compromized. Decentralized
-                systems improve privacy and cross-borders. Both have single points of failure. Can we produce systems
-                with the privacy and cross-boundary abilities of decentralized system but without single points of
-                failures — particularly endpoint devices?
-            </p>
-
-            <p><span class="text-gradient-gold">Ammit</span> aims to provide <b>failsafe</b> solutions. Using a
-                model inspired by aviation design, we don't stop at trying to <em>prevent</em> intrustions, but assume
-                that devices or services <em>will</em> be compromised. Using advanced cryptographic techniques such as
-                MPC and threshold signatures, we ensure that when such a failure happens the damage done is minimal and
-                clients are able to recover quickly and with little cost.
-            </p>
-
-            <div style="margin-top: var(--spacing-md);">
-                <a href="#book-demo" class="btn btn-primary">Book a Demo</a>
-                <a href="/failsafe-design/" class="btn btn-outline" style="margin-left: 1rem;">Learn More</a>
-            </div>
-        </div>
-    </div>
-</section>
+</div>
 
 <!-- Demo Form Section -->
 <section id="book-demo" class="section" style="background: rgba(0,0,0,0.2);">
