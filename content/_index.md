@@ -43,3 +43,5 @@ Ammit is designed for everyone, from individuals and small businesses to large e
 Our ambition goes beyond building another identity service or messaging app. We want to create the trust infrastructure for an increasingly digital world: an open foundation on which people and organisations can communicate, transact, and collaborate without having to take authenticity on faith.
 
 **In a world where anything can be faked, Ammit is building a future where authenticity can be proven.**
+
+[PDF](/Ammit%201-Pager.pdf)
